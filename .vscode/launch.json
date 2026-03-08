@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "pytest",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": ["${relativeFile}", "-s", "-v"],
+      "python": "${workspaceFolder}/.venv/bin/python3",
+      "justMyCode": true,
+      "env": {}
+    },
+    {
+      "name": "pytest (all)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": ["-s", "-v"],
+      "python": "${workspaceFolder}/.venv/bin/python3",
+      "justMyCode": true,
+      "env": {}
+    }
+  ]
+}
